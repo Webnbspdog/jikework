@@ -1,0 +1,451 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>新百度模拟运用弹性盒模型</title>
+	<link rel="stylesheet" href="d2.css" media="only screen and (min-width:400px)">
+	<!--[if IE]>
+	<script src="//cdn.bootcss.com/html5shiv/r29/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="css/font-awesome.min.css" media="only screen and (max-width:400px)" />
+</head>
+<body>
+	<div class="skincontainer"></div>
+	<header>
+		<ul class="leftNav">
+			<li class="weathernav leftli">天气</li>
+			<li><a href="#" class="leftli">宝箱</a></li>
+			<li id="changeSkin" class="leftli">换肤</li>
+			<div id="hideSkinbox">
+				<div class="container">
+					<div class="skinboxNav">
+						<ul>
+							<li>热门</li>
+							<li class="current">游戏</li>
+							<li>卡通</li>
+							<li>女神降临</li>
+							<li>明星</li>
+							<li>风景</li>
+							<li>简约</li>
+							<li>小清新</li>
+							<i></i>
+							<li>自定义</li>
+							<li>最近使用</li>
+
+						</ul>
+						<span class="shouqi">
+							<span class="bg"></span>
+							收起
+						</span>
+						<div class="clear"></div>
+					</div>
+					<div id="skinboxNav2">
+						<ul>
+							<li class="current">守望先锋</li>
+							<li>守望先锋</li>
+							<li>守望先锋</li>
+							<li>守望先锋</li>
+							<li>守望先锋</li>
+							<li>守望先锋</li>
+							<li>守望先锋</li>
+							<li>守望先锋</li>
+						</ul>
+						<div class="clear"></div>
+					</div>
+					<div id="skinbox">
+							<img src="images/bizhi1.jpg" alt="" />
+							<img src="images/bizhi2.jpg" alt="" />
+							<img src="images/bizhi1.jpg" alt="" />
+							<img src="images/bizhi2.jpg" alt="" />
+							<img src="images/bizhi1.jpg" alt="" />
+							<img src="images/bizhi2.jpg" alt="" />
+						<div id="preview">
+							<div class="previewWall"></div>
+							<p>背景皮肤效果预览</p>
+						</div>
+					</div>
+					<input type="radio" /><span>开启自动换肤</span>
+				</div>
+			</div>
+			<li id="messageclick" class="leftli">消息</li>
+			<div class="hidemessageBox">
+				<span class="sp1">			<!-- 小尖角 -->
+					<span class="sp2"></span>
+				</span>
+				<div class="messageBox">
+					<div class="message"></div>
+					<hr />
+					<button class="removemess">清空消息</button>
+					<button class="setmess">消息设置</button>
+				</div>
+			</div>
+		</ul>
+		<ul class="u1">				<!-- 左侧导航栏 -->
+			<li class="l1" id="l1"><a href="#">糯米</a></li>
+			<li class="l1" id="l1"><a href="#">新闻</a></li>
+			<li class="l1" id="l1"><a href="#">hao123</a></li>
+			<li class="l1" id="l1"><a href="#">地图</a></li>
+			<li class="l1" id="l1"><a href="#">视频</a></li>
+			<li class="l1" id="l1"><a href="#">贴吧</a></li>
+			<li id="l1"><a href="#">登录</a></li>
+			<li id="l1"><a href="#">设置</a>
+				<ul>	<!-- 设置底下的隐藏览 -->
+					<span class="sp1">			<!-- 小尖角 -->
+						<span class="sp2"></span>
+					</span>
+					<li><a href="#">搜索设置</a></li>
+					<li><a href="#">高级搜索</a></li>
+					<li><a href="#">关闭预测</a></li>
+					<li><a href="#">搜索历史</a></li>
+				</ul>
+			</li>
+			<li id="l3" class="l2" >更多产品
+				
+			</li>
+			<ul class="hide1" id="hide1">			<!-- 更多产品的隐藏栏 -->
+				<li class="backcolor">更多产品</li>
+				<li>
+					<a href="#">
+						<img src="images/3.jpg" alt=""><br>
+						音乐
+					</a>
+				</li>
+				
+				<li>
+					<a href="#">
+						<img src="images/4.jpg" alt=""><br>
+						图片
+					</a>
+				</li>		
+				
+				<li>
+					<a href="#">
+						<img src="images/2.jpg" alt=""><br>
+						知道
+					</a>
+				</li>		
+				
+				<li>
+					<a href="#">
+						<img src="images/5.jpg" alt=""><br>
+						文库
+					</a>
+				</li>		
+				
+				<li>
+					<a href="#">
+						<img src="images/6.jpg" alt=""><br>
+						风云榜
+					</a>
+				</li>		
+				
+				<li>
+					<a href="#">
+						全部产品》
+					</a>
+				</li>		
+					
+			</ul>
+		</ul>
+
+		<!-- 手机版 -->	
+		<a href="#" class="weather">			<!-- 天气 -->
+			<i class="icon-bolt icon-2x"></i>
+			<p>青岛</p>
+			<p>6/-2</p>
+			<i class="icon-angle-down"></i>
+		</a>
+		<a href="#"><img class="use" src="images/login.png" alt="" /></a>		<!-- 登录 -->
+	</header>
+
+	<section ><!-- 中间部分 -->
+			<div class="d1 container">											<!-- logo -->
+				<img class="img" src="images/bd.png"  alt="" >
+			</div>
+			 <div class="d2 container">			
+				<input type="text" class="input1">							<!-- 输入框 -->
+				<img class="sp3" src="images/ca1_01.jpg" alt="" id="sp3" >								<!-- 小照相机 -->
+				<a href="#" class="baiducall"></a>
+				<i class="icon-angle-down" id="jiantou" onclick="change212()"></i>
+				<div class="hideapp" id="hideapp">
+					<i class="icon-angle-up up"></i>
+					<div class="arrow_box">
+						<a href="#" class="hide_shuo"></a>
+						<a href="#" class="hide_cam"></a>
+					</div>
+				</div>
+				<button class="btn1">百度一下</button>					<!-- 按钮 -->
+			</div>
+
+			<div class="recommendBox ">				<!-- 推荐新闻模块 -->
+				<div class="recommendNav">
+					<ul>
+						<li>我关注的</li>
+						<li class="currentabc">推荐</li>
+						<li>导航</li>
+						<div class="clear"></div>
+					</ul>
+					<span class="set-icon"></span>
+				</div>
+				<div class="recommendContent">
+					<div class="content0">				<!-- 我关注的 -->
+						<div class="guanzhu">
+							<div class="nav"><span class="triangle triangle2"></span>我的导航</div>
+							<div class="hidenav">
+								<ul>
+									<li>火影忍者</li>
+									<li>火影忍者</li>
+									<li>火影忍者</li>
+									<li>火影忍者</li>
+								</ul>
+								<div class="clear"></div>
+							</div>
+							<div class="nav"><span class="triangle triangle2"></span>我的股票</div>
+							<div class="hidenav">
+								<ul>
+								</ul>
+							</div>
+							<div class="nav"><span class="triangle triangle2 "></span>我的星座</div>
+							<div class="hidenav">
+								<ul>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="content0"  style="display:block">			<!-- 推荐 -->
+						<div class="newsbox">
+							<div class="news">
+								<h3><a href="#">吉利博越碰撞测试得分最高，最不安全车竟然是它</a></h3>
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<p><a href="#">搜狐汽车</a><span class="src-time">01-10 21:02</span></p>
+								<hr />
+							</div>
+							<div class="news">
+								<h3><a href="#">吉利博越碰撞测试得分最高，最不安全车竟然是它</a></h3>
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<p><a href="#">搜狐汽车</a><span class="src-time">01-10 21:02</span></p>
+								<hr />
+							</div>
+							<div class="news">
+								<h3><a href="#">吉利博越碰撞测试得分最高，最不安全车竟然是它</a></h3>
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<p><a href="#">搜狐汽车</a><span class="src-time">01-10 21:02</span></p>
+								<hr />
+							</div>
+							<div class="news">
+								<h3><a href="#">吉利博越碰撞测试得分最高，最不安全车竟然是它</a></h3>
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<p><a href="#">搜狐汽车</a><span class="src-time">01-10 21:02</span></p>
+								<hr />
+							</div>
+							<div class="news">
+								<h3><a href="#">吉利博越碰撞测试得分最高，最不安全车竟然是它</a></h3>
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<p><a href="#">搜狐汽车</a><span class="src-time">01-10 21:02</span></p>
+								<hr />
+							</div>
+							<div class="news">
+								<h3><a href="#">吉利博越碰撞测试得分最高，最不安全车竟然是它</a></h3>
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<p><a href="#">搜狐汽车</a><span class="src-time">01-10 21:02</span></p>
+								<hr />
+							</div>
+							<div class="news">
+								<h3><a href="#">吉利博越碰撞测试得分最高，最不安全车竟然是它</a></h3>
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<p><a href="#">搜狐汽车</a><span class="src-time">01-10 21:02</span></p>
+								<hr />
+							</div>
+							<div class="news">
+								<h3><a href="#">吉利博越碰撞测试得分最高，最不安全车竟然是它</a></h3>
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3325262000,3261717609&fm=80&w=179&h=119&img.JPEG" alt="" />
+								<p><a href="#">搜狐汽车</a><span class="src-time">01-10 21:02</span></p>
+								<hr />
+							</div>
+							<div class="clear"></div>
+						</div>
+
+						<div class="hotspotbox">
+							<h3>实时热点</h3>
+							<ul>
+								<li><a href="#">韩化妆品未准入华</a></li>
+								<li><a href="#">韩化妆品未准入华</a></li>
+								<li><a href="#">韩化妆品未准入华</a></li>
+								<li><a href="#">韩化妆品未准入华</a></li>
+								<li><a href="#">韩化妆品未准入华</a></li>
+								<li><a href="#">韩化妆品未准入华</a></li>
+								<li><a href="#">韩化妆品未准入华</a></li>
+								<li><a href="#">韩化妆品未准入华</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">韩化妆品未准入华</a></li>
+								<li><a href="#">韩化妆品未准入华</a></li>
+								<li><a href="#">韩化妆品未准入华</a></li>
+								<li><a href="#">韩化妆品未准入华</a></li>
+								<li><a href="#">韩化妆品未准入华</a></li>
+								<li><a href="#">韩化妆品未准入华</a></li>
+								<li><a href="#">韩化妆品未准入华</a></li>
+								<li><a href="#">韩化妆品未准入华</a></li>
+							</ul>
+						</div>
+						
+					</div>
+
+					<div class="content0">			<!-- 导航 -->
+						<div class="daohang">
+							<div><h3>猜你喜欢</h3></div>
+							<ul>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<div class="clear"></div>
+							</ul>
+							<div><h3>资讯信息</h3></div>
+							<ul>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<li><a href="#">多玩游戏</a></li>
+								<div class="clear"></div>
+							</ul>
+							<div><h3>猜你喜欢</h3></div>
+							<ul>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<li><a href="#">百度糯米</a></li>
+								<div class="clear"></div>
+							</ul>
+					</div>
+				</div>
+			</div>
+			<span class="top-icon"></span>				<!-- 返回顶部 -->
+	</section>
+
+	<footer>			<!-- 底部 -->
+		<div>
+			<img class="p1" src="images/er1.png" alt="">
+			<span class="s1">手机百度</span><br>
+			<span class="s2">快人一步</span>
+		</div>
+		<div class="second">
+			<img class="p1" src="images/er2.png" alt="">
+			<span class="s1">百度糯米</span><br>
+			<span class="s2">一元大餐</span>
+			<a href="#"><p>百度浏览器，上网提速200%</p></a>
+			<a href="#"><img class="app" src="images/baiduapp_icon.png" alt="" />手机百度， 6亿用户的极速搜索应用</a><br />
+			<a href="#"><p>百度推广，让有需求的客户找到你</p></a>
+		</div>
+		<div>
+			<a class="feedback" href="#"><img class="feed" src="images/feed.png" alt="" />用户反馈</a>
+			<a href="#" class="grey">把百度设为主页</a>&nbsp;
+			<a href="#" class="grey">关于百度</a>&nbsp;
+			<a href="#" class="grey">About  Baidu</a>&nbsp;
+			<a href="#" class="grey">百度推广</a>&nbsp;
+			<br>
+			@2016 Baidu<a href="#" class="grey">使用百度前必读</a>
+			<a href="#" class="grey">意见反馈</a>京ICP证030173号
+			<img class="p5" src="images/ic1.jpg" alt=""> <br>
+			<img class="cla" src="images/ic2.jpg" alt="">
+			<a href="#">京公网安备11000002000001号</a>	
+		</div>
+	</footer>
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="j1.js"></script>
+</body>
+</html>

@@ -1,0 +1,494 @@
+*{margin: 0;padding: 0}
+body{min-width: 700px;
+
+	position: relative;
+	}
+.skincontainer{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: -2;
+}
+header{
+	height: 36px;
+	border-bottom: 1px solid #aaa;
+}
+.clear{
+	clear:both;
+}
+.u1{list-style: none;						/*头部导航栏*/
+	margin-left: 20px;
+	margin-top:10px;
+	position: absolute;
+	right: 0px;
+	}
+.u1 li{
+	
+}
+.leftNav{
+	font-size: 14px;
+	list-style: none;
+}
+.leftNav a{
+	color: #555;
+}
+.leftNav li{
+	float: left;
+	color: #555;
+	margin-left: 20px;
+	margin-top:10px;
+	cursor: pointer;
+}
+#hideSkinbox{						/*隐藏的换肤模块*/
+	height: 300px;
+	border-bottom: 1px solid #aaa;
+	position: absolute;
+	top:0px;
+	z-index: 1000;
+	background: #fff;
+	display: none;
+}
+.choosen-icon{
+	width: 30px;
+	height: 30px;
+	background: url(https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/skin/skin_icon_png24_62d35ae7.png) no-repeat -1000px -1000px;
+	position: absolute;
+
+}
+.container{
+	width: 650px;
+	margin: 0 auto;
+}
+.changecolor{
+	background: #389cff;
+	transition:all  0.5s ease;	
+}
+.skinboxNav ul{
+	list-style: none;
+	text-decoration: none;
+}
+.skinboxNav .current{
+	background: #389cff;
+	color: #fff;
+}
+
+.skinboxNav ul li{
+	padding: 20px 10px;
+    margin: 0px;
+}
+.skinboxNav ul li:hover{
+	color: #fff;
+}
+.bg{
+	margin-right: 2px;
+    background: url(https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/skin/skin_icon_82b6ef5b.png) no-repeat -44px -175px;
+    width: 11px;
+    height: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.shouqi{
+	color: #389cff;
+    font-weight: bold;
+    position: relative;
+    top: 19px;
+    cursor: pointer;
+}
+#skinboxNav2 ul{
+	list-style: none;
+	text-decoration: none;
+}
+.skinboxNav2 .current{
+	color: #389cff;
+}
+.skinboxNav2 ul li{
+	padding: 20px 10px;
+    margin: 0px;
+}
+#skinbox{
+	width: 405px;
+	height: 155px;
+	margin-top:30px;
+}
+#skinbox img{
+	margin: -4px;
+	cursor: pointer;
+}
+#preview{
+	position: relative;
+    top: -193px;
+    left: 421px;
+
+}
+.previewClass{
+	width: 200px;
+	height: 150px;
+}
+.previewWall{
+	width: 260px;
+	height: 150px;
+	border: 1px solid #aaa;
+	background-width:260px;
+	background-height:150px;
+}
+#preview p{
+	margin-top:10px;
+}
+
+/*隐藏的信息模块*/
+
+.hidemessageBox{
+	position: absolute;
+	display: none;
+	z-index: -100;
+}
+.hidemessageBox .sp1{
+	left: 172px;
+    top: 35px;
+}
+.messageBox{
+	width: 200px;
+    height: 150px;
+    border: 1px solid #aaa;
+    position: relative;
+    top: 40px;
+    left: 83px;
+}
+.hidemessageBox .message{
+	    height: 80px;
+}
+.removemess{
+	width: 70px;
+    height: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: #aaa;
+    color:#fff;
+}
+.setmess{
+	width: 70px;
+    height: 25px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background: #389cff;
+    color:#fff;
+}
+
+#l1 ,#l3{margin-left: 20px;						/*导航栏的具体每一项*/
+	font-size: 14px;
+	float: left;}
+#l1 a{color: #000;							/*导航栏里的a标签*/
+	font-size: 13px}
+#l1 a:hover{color: blue}   					/*a标签移入*/
+.l1{font-weight: bold;}
+.u1 li ul{list-style: none;					/*隐藏的下拉列表	*/
+	border: 1px solid #aaa;
+	box-shadow:  2px 2px 2px #888888;
+	width: 70px;display: none;
+	position: absolute;
+	right: 70px;
+	margin-top: 5px;
+	
+	}
+.u1 li:hover ul{display: block;}
+.u1 li ul li{
+	position: relative;
+	display: block;
+	width: 70px;
+	height: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+.u1 li ul li a{
+	text-decoration: none;
+
+}
+.u1 li ul li:hover{background: #38f}
+.sp1,.sp2{						/*div框的尖角*/
+	display:block;  
+  	height:0px;  
+ 	width:0px;  
+  	position:absolute;  
+  	font-size:0;  
+  	line-height:0; 
+  	}
+.sp1{					
+	top: -6px;
+	right: 25px;
+	border-bottom: 6px solid #aaa;
+	border-top: none;
+	border-right: 6px solid white;
+	border-left: 6px solid white;
+}
+.sp2{
+	top: 4px;
+	right: -3px;
+	border-bottom: 3px solid white;
+	border-top: none;
+	border-right: 3px solid #aaa;
+	border-left:  3px solid #aaa;
+
+}
+.l2{						/*更多产品*/
+	font-size: 14px;
+	background: #38f;
+	color: white;
+	width: 60px;
+	height: 25px;
+	display: -webkit-box;
+	-webkit-box-align:center;
+	-webkit-box-pack:center;
+	margin-top: -10px;
+	padding: 6px;
+
+}
+.hide1{						 /*更多产品的隐藏栏*/
+	background: #f9f9f9;
+	height: 100%;
+	display: none;
+	position:absolute;
+	z-index: 1000;
+	right:0;
+	top: -10px;
+	list-style: none;
+	text-align: center;
+	
+}
+.backcolor{
+	cursor: pointer;
+
+}
+.hide1 li{
+	background: #f9f9f9;
+    padding: 10px 0;
+    border-bottom: 0.5px solid #ccc;
+    
+}
+.hide1 li a{		
+	text-decoration: none;
+	font-size: 15px;
+	color: #555;
+
+
+}
+.hide1 hr{
+	width: 80%;
+	margin: 10px auto;
+}
+
+.d1{ 					/*logo位置*/
+	text-align: center;
+	position: relative;
+	top: 100px;
+
+	}
+.img{;width:270px;		/*logo*/
+	height:129px}
+.d2{					/*	输入框及按钮位置*/
+	text-align: center;
+	position: relative;
+	top: 100px;
+	left:-40px;
+}
+.input1{
+	width: 550px;		/*输入框*/
+	height: 30px;
+	position: relative;
+    left: 5px;
+	}
+.btn1{
+	height:34px;width: 100px;    /*按钮*/
+	background: #38f;color: #fff;
+	font-size: 15px;border: none;
+	position: relative;
+	top: -34px;
+	left: 317px;
+	}
+.btn1:hover{
+		background: #317ef3;
+}
+.sp3{position: relative;			/*输入框里的摄像机图像*/
+	top: 4px;
+    left: -40px;
+	 }
+footer{								/*	底部*/
+	font-size: 10px;
+	width: 650px;
+	height: 65px;
+	color: #888;
+	position:relative;
+	top: 0px;
+	margin: 0 auto;
+	
+
+	}
+footer div{
+	float: left;
+	margin-left:30px; 
+}
+footer div span{
+	float: left;
+	margin-top:10px;
+	margin-left: 5px;
+}
+.p1{float: left}
+.s1{font-weight: bold;
+	color: #444;}
+footer a{color: #888;
+		font-size: 10px;
+}
+/*去除手机端的内容*/
+.weather,.use,.logotel,.d3,.second a,.feedback{
+	display: none;
+}
+.recommendBox{				/*推荐新闻模块*/
+	border: 1px solid #aaa;
+   	width: 800px; 
+    margin: 150px auto;
+    background: #fff;
+}
+.recommendNav{
+
+}
+.recommendNav ul li{
+	list-style: none;
+    float: left;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 40px;
+    padding: 0 20px;
+}
+.recommendNav ul li:hover{
+	background: #aaa;
+	color: #fff;
+}
+.currentabc{
+	background: #aaa;
+	color: #fff;
+}
+.set-icon{
+	background: url(https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/mancard/img/card_setts_fdb17359.png) no-repeat -121px -49px;
+    width: 22px;
+    height: 18px;
+    display: inline-block;
+    float: right;
+    position: relative;
+    top: -28px;
+    left: -10px;
+}
+.set-icon:hover{
+	background-position: -121px -73px;
+}
+.recommendContent{
+	border-top:1px solid #aaa;
+	min-height: 300px;
+}
+.recommendContent .content0{
+	display: none;
+}
+.guanzhu .nav{
+	text-indent: 1em;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+    border-bottom: 1px solid #aaa;
+    cursor: pointer;
+}
+.guanzhu .hidenav{
+	border-bottom: 1px solid #aaa;
+	height: 38px;
+	display: none;
+}
+.guanzhu ul li{
+	float: left;
+    list-style: none;
+    margin: 10px;
+}
+.top-icon{
+	display: none;
+	position: fixed;
+    height: 17px;
+    width: 33px;
+    bottom: 238px;
+    right: 400px;
+    margin: 0 auto;
+    background: url(images/topfed.png) no-repeat -1px -10px;
+    background-position: -39px -9px;
+}
+.triangle{
+	top: -5px;
+    left: 0px;
+    height: 0;
+    line-height: 0;
+    width: 0;
+    font-size: 0;
+    border: 5px dashed transparent;
+    position: relative;
+}
+.triangle2{
+	border-left: 5px solid #666;
+}
+.triangle1{
+    border-top: 5px solid #666;
+}
+.newsbox{
+	margin: 13px;
+	
+	width: 63%;
+}
+.newsbox .news{
+	margin-bottom: 15px;
+}
+.news a{
+	color: #000;
+    text-decoration: none;
+}
+.news img{
+	width: 32%;
+}
+.news p {
+	font-size: 14px;
+}
+.hotspotbox{
+	float: right;
+    margin-right: 13px;
+	position: relative;
+    top: -1317px;
+    
+}
+.hotspotbox h3{
+	line-height: 15px;
+    margin-bottom: 15px;
+}
+.hotspotbox ul{
+	float: left;
+}
+.hotspotbox ul li{
+	list-style: none;
+}
+.hotspotbox ul li a{
+	color: #000;
+    text-decoration: none;
+}
+.daohang div{				/*导航*/
+	line-height: 40px;
+    text-indent: 1em;
+}
+.daohang ul{
+	    position: relative;
+    left: 3px;
+}
+.daohang ul li {
+	list-style: none;
+    float: left;
+    background: #aaa;
+    padding: 32px;
+    margin: 2px;
+}
+.daohang ul li:hover{
+	box-shadow: 1px 1px #666;
+}
+.daohang ul li a{
+	text-decoration: none;
+	color: #fff;
+}

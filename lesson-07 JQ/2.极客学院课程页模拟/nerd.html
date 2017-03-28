@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>极客学院网页模拟</title>
+	<link rel="stylesheet"  href="bootstrap.css">
+	<link rel="stylesheet"  href="d1.css">
+</head>
+<body>
+	<a name="top" id="top"></a>   <!-- 设置返回顶部的锚点 -->
+	<header>
+		<nav class="navbar navbar-default" role="navigation">
+			 <div class="container">
+			   <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-brand" href="#"><img class="logohead" src="http://e.jikexueyuan.com/headerandfooter/images/logo.png?t=1480585623000" alt=""></a>      <!--  头部logo图片 -->
+			    </div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li ><a href="#">首页</a></li>
+			        <li class="dropdown">																				<!-- 职业学院下拉菜单 -->
+			          <a href="#" class="dropdown-toggle" >职业学院 <span class="arrow-icon"></span></a>
+			          <ul class="dropdown-menu" role="menu">
+			            <li><h5>前端学院</h5></li>
+			            <li><a href="#"><span class="web-icon"></span>web前端工程师</a></li>
+			            <li><h5>后端学院</h5></li>
+			            <li><a href="#"><span class="python-icon"></span>Python Web工程师</a></li>
+			            <li><a href="#"><span class="go-icon"></span>Go语言工程师</a></li>
+			            <li><h5>移动学院</h5></li>
+			            <li><a href="#"><span class="ios-icon"></span>IOS工程师</a></li>
+			          </ul>
+			        </li>
+			         <li class="dropdown">																								<!-- 会员课程下拉菜单 -->
+			          <a href="#" class="dropdown-toggle active" >会员课程 <span class="arrow-icon"></span></a>
+			          <ul class="dropdown-menu" role="menu">
+			            <li><a href="#">
+							<i class="kck-icon"></i>课程库<span class="spright">2500+</span>
+			            </a></li>
+			            <li><a href="#">
+							<i class="zyljt-icon"></i>职业路径图<span class="spright">9</span>
+			            </a></li>
+			            <li><a href="#">
+							<i class="zstxt-icon"></i>知识体系图<span class="spright">24</span>
+			            </a></li>
+			            <li><a href="#">
+							<i class="xlkc-icon"></i>系统课程<span class="spright">101</span>
+			            </a></li>
+			            <li><a href="#">
+							<i class="kcbq-icon"></i>课程标签<span class="spright">4000+</span>
+			            </a></li>
+			            <li><a href="#">
+							<i class="vip-icon"></i>VIP会员购买<span class="spright">30/月  260/年</span>
+			            </a></li>
+			          </ul>
+			        </li>
+			         <li class="dropdown">																								<!-- 极客社区下拉菜单 -->
+			          <a href="#" class="dropdown-toggle">极客社区 <span class="arrow-icon"></span></a>
+			          <ul class="dropdown-menu" role="menu">
+			           <li><a href="#">
+							<i class="jswd-icon"></i>技术问答<span class="spright">20000+</span>
+			            </a></li>
+			            <li><a href="#">
+							<i class="wiki-icon"></i>Wiki<span class="spright">351</span>
+			            </a></li>
+			            <li><a href="#">
+							<i class="zstxt-icon"></i>社群<span class="spright">7000+</span>
+			            </a></li>
+			            <li><a href="#">
+							<i class="zygx-icon"></i>资源下载<span class="spright">3000+</span>
+			            </a></li>
+			          </ul>
+			        </li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right">			<!-- 右边栏 -->
+			        <li><a href="#"><span class="search-icon" id="search-icon"></span></a></li>
+			        <div id="hideSearchBox">
+						<span class="search-icon"></span>
+						<input type="text" value="搜索课程，问答或WiKi">
+						<a href="#">Android</a>
+						<a href="#">ios</a>
+						<a href="#">HTML5</a>
+						<span class="close-icon"></span>
+			        </div>
+			        <li class="dropdown l2">
+			          <a href="#" class="dropdown-toggle"><span class="app-icon"></span></a>
+			          <ul class="dropdown-menu"  role="menu">
+			            <li ><img class="qrcode" src="http://e.jikexueyuan.com/headerandfooter/images/heade-rwm.png?t=1480585623000" alt=""></li>
+			          </ul>
+			        </li>
+			        <li class="dropdown l3">
+			          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="login-icon"></span></a>
+			          <ul class="dropdown-menu" role="menu">
+			            <li><a class="inline" href="#">注册</a><span class="inline">|</span><a  class="inline" href="#">登录</a></li>
+			            <li><a href="#"><i class="xxzx-icon"></i>学习中心</a></li>
+			            <li><a href="#"><i class="grzy-icon"></i>个人主页</a></li>
+			            <li><a href="#"><i class="xxtz-icon"></i>消息通知</a></li>
+			            <li><a href="#"><i class="zhsz-icon"></i>账号设置</a></li>
+			          </ul>
+			        </li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			</div><!-- /.container -->
+		</nav>
+		
+	</header>
+	<!-- 头部 -->
+	<div class="container main">
+		<div class="aside col-lg-3">
+			<div class="aside-classPool">
+				<div class="active topic">
+					<i class="kck-icon"></i>课程库
+				</div>
+				<ul>
+					<li><a href="#">移动开发</a>
+						<div class="hideAside">
+							<dl>
+								<dt><a href="#">应用开发</a></dt>
+								<hr>
+								<dd><a href="#">Android</a></dd>
+								<dd><a href="#">ios</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="#">游戏开发</a></dt>
+								<hr>
+								<dd><a href="#">cocos</a></dd>
+								<dd><a href="#">Unity3D</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li><a href="#">前端开发</a>
+						<div class="hideAside">
+							<dl>
+								<dt><a href="#">前端基础</a></dt>
+								<hr>
+								<dd><a href="#">HTML</a></dd>
+								<dd><a href="#">CSS</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="#">前端进阶</a></dt>
+								<hr>
+								<dd><a href="#">Typescript</a></dd>
+								<dd><a href="#">前端安全</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li><a href="#">后端开发</a>
+						<div class="hideAside">
+							<dl>
+								<dt><a href="#">后端开发</a></dt>
+								<hr>
+								<dd><a href="#">Python基础</a></dd>
+								<dd><a href="#">web2py</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="#">PHP</a></dt>
+								<hr>
+								<dd><a href="#">PHp基础</a></dd>
+								<dd><a href="#">YII</a></dd>
+							</dl>
+						</div>
+					</li>
+					<li><a href="#">基础知识</a>
+						<div class="hideAside">
+							<dl>
+							<dt><a href="#">基础语言</a></dt>
+							<hr>
+							<dd><a href="#">C</a></dd>
+							<dd><a href="#">C++</a></dd>
+						</dl>
+						<dl>
+							<dt><a href="#">计算机基础</a></dt>
+							<hr>
+							<dd><a href="#">计算机组成原理</a></dd>
+							<dd><a href="#">网络工程</a></dd>
+						</dl>
+						</div>
+					</li>
+					<li><a href="#">云计算大数据</a>
+						<div class="hideAside">
+							<dl>
+							<dt><a href="#">云计算</a></dt>
+							<hr>
+							<dd><a href="#">OpenStack</a></dd>
+							<dd><a href="#">Docker</a></dd>
+						</dl>
+						<dl>
+							<dt><a href="#">大数据</a></dt>
+							<hr>
+							<dd><a href="#">Hadoop</a></dd>
+							<dd><a href="#">Storm</a></dd>
+						</dl>
+						</div>
+					</li>
+					<li><a href="#">智能硬件</a>
+						<div class="hideAside">
+							<dl>
+							<dt><a href="#">硬件架构</a></dt>
+							<hr>
+							<dd><a href="#">C51</a></dd>
+							<dd><a href="#">ARM</a></dd>
+						</dl>
+						<dl>
+							<dt><a href="#">物联网操作系统</a></dt>
+							<hr>
+							<dd><a href="#">RTOS</a></dd>
+							<dd><a href="#">Android</a></dd>
+						</dl>
+						</div>
+					</li>
+					<li><a href="#">数据库</a>
+						<div class="hideAside">
+							<dl>
+							<dt><a href="#">SQL</a></dt>
+							<hr>
+							<dd><a href="#">MySQL</a></dd>
+							<dd><a href="#">SQL</a></dd>
+						</dl>
+						<dl>
+							<dt><a href="#">NoSQL</a></dt>
+							<hr>
+							<dd><a href="#">Redis</a></dd>
+							<dd><a href="#">Mongo</a></dd>
+						</dl>
+						</div>
+					</li>
+					<li><a href="#">认证考试</a>
+						<div class="hideAside">
+							<dl>
+							<dt><a href="#">计算机等级考试</a></dt>
+							<hr>
+							<dd><a href="#">一级</a></dd>
+							<dd><a href="#">二级</a></dd>
+						</dl>
+						<dl>
+							<dt><a href="#">企业认证</a></dt>
+							<hr>
+							<dd><a href="#">思科认证</a></dd>
+							<dd><a href="#">Oracle认证</a></dd>
+						</dl>
+						</div>
+					</li>
+					<li><a href="#">企业IT</a>
+						<div class="hideAside">
+							<dl>
+							<dt><a href="#">运维管理</a></dt>
+							<hr>
+							<dd><a href="#">shell</a></dd>
+							<dd><a href="#">自动化运维</a></dd>
+						</dl>
+						<dl>
+							<dt><a href="#">商业智能</a></dt>
+							<hr>
+							<dd><a href="#">FileMaker</a></dd>
+						</dl>
+						</div>
+					</li>
+					<li><a href="#">设计&产品&测试</a>
+						<div class="hideAside">
+							<dl>
+							<dt><a href="#">设计基础</a></dt>
+							<hr>
+							<dd><a href="#">PS</a></dd>
+							<dd><a href="#">FLash</a></dd>
+						</dl>
+						<dl>
+							<dt><a href="#">游戏设计</a></dt>
+							<hr>
+							<dd><a href="#">界面设计</a></dd>
+							<dd><a href="#">角色设计</a></dd>
+						</dl>
+						</div>
+					</li>
+				</ul>	
+			</div>
+			<div><a class="topic  noactive" href="#">职业路径图</a></div>
+			<div><a class="topic  noactive" href="#">知识体系图</a></div>
+			<div><a class="topic  noactive" href="#">系统课程</a></div>
+			<div><a class="topic  noactive" href="#">课程标签</a></div>
+		</div>
+
+		<div class="mainContent col-lg-9">     <!-- 主体 -->
+			<!-- 课程导航栏 -->
+			<div class="classNav">
+				<ul>
+					<li>全部课程</li>
+					<li>
+						最新<span class="arrow-icon"></span>
+						<div class="hideClassNav">
+							<div>最新&nbsp;</div>
+							<div><a href="#">最新&nbsp;</a></div>
+							<div><a href="#">最热</a></div>
+						</div>
+					</li>
+					
+					<li>
+						课程类型<span class="arrow-icon"></span>
+						<div class="hideClassNav">
+							<div>课程类型&nbsp;</div>
+							<div><a href="#">VIP</a></div>
+							<div><a href="#">免费</a></div>
+						</div>
+					</li>
+					
+					<li>
+						内容类型<span class="arrow-icon"></span>
+						<div class="hideClassNav">
+							<div>内容类型&nbsp;</div>
+							<div><a href="#">知识精解</a></div>
+							<div><a href="#">项目实战</a></div>
+						</div>
+					</li>
+					
+					<li>
+						难度等级<span class="arrow-icon"></span>
+						<div class="hideClassNav">
+							<div>难度等级&nbsp;</div>
+							<div><a href="#">初级</a></div>
+							<div><a href="#">中级</a></div>
+						</div>
+					</li>
+					
+				</ul>
+				<span class="kuai-icon"></span>
+				<span class="list-icon"></span>
+			</div>
+			<div id="classPool">						<!-- 动态生成课程栏 -->
+			</div>
+			<br>
+			<br>
+			<div id="page-nav">							<!-- 页面导航条 -->
+				<ul class="pages">
+					<li class="pgnext pgEmpty">首页</li>
+					<li class="pgnext pgEmpty">上一页</li>
+					<li class="pgNumber pgCurr">1</li>
+					<li class="pgNumber">2</li>
+					<li class="pgNumber">3</li>
+					<li class="pgNumber">4</li>
+					<li class="pgNumber">5</li>
+					<li class="pgNumber">6</li>
+					<li class="pgNumber">7</li>
+					<li class="pgpoint">...</li>
+					<li class="pgnext">下一页</li>
+					<li class="pgnext">末页</li>
+					<li class="pgpoint pgtotal">共 95 页</li>
+					<li class="pgpoint pgnow">
+						当前
+						<input type="text" id="gotoval">
+						页
+					</li>
+					<li class="pggo pgnext">确定</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container final">
+			<div class="row">
+				<div class="col-lg-3">
+					<img class="logoprey" src="http://e.jikexueyuan.com/headerandfooter/images/jk-logo-footer.png?t=1480585623000" alt="">
+					<p>极客学院，编程是一种信仰！</p>
+				</div>
+				<div class="col-lg-2">
+					<dl>
+						<dt>职业学院</dt>
+						<dd><a href="#">Web前端工程师</a></dd>
+						<dd><a href="#">Python Web工程师</a></dd>
+						<dd><a href="#">Go语言工程师</a></dd>
+						<dd><a href="#">iOS工程师</a></dd>
+					</dl>
+				</div>
+				<div class="col-lg-2">
+					<dl>
+						<dt>会员课程</dt>
+						<dd><a href="#">课程库</a></dd>
+						<dd><a href="#">知识体系图</a></dd>
+						<dd><a href="#">职业路径图</a></dd>
+						<dd><a href="#">系列课程</a></dd>
+						<dd><a href="#">课程标签</a></dd>
+					</dl>
+				</div>
+				<div class="col-lg-2">
+					<dl>
+						<dt>极客社区</dt>
+						<dd><a href="#">技术问答</a></dd>
+						<dd><a href="#">Wiki</a></dd>
+						<dd><a href="#">资源下载</a></dd>
+						<dd><a href="#">社群</a></dd>
+					</dl>
+				</div>
+				<div class="col-lg-1">
+					<dl>
+						<dt>其他</dt>
+						<dd><a href="#">关于我们</a></dd>
+						<dd><a href="#">加入我们</a></dd>
+						<dd><a href="#">讲师合作</a></dd>
+						<dd><a href="#">联系我们</a></dd>
+						<dd><a href="#">友情链接</a></dd>
+					</dl>
+				</div>
+				<div class="col-lg-2"></div>
+				<div class="col-lg-2">
+					<p>服务热线:400-678-8266</p>
+					<a href="#" class="phone ios-download">
+						<span class="preybox"></span>
+						<p>iPhone</p>
+						<img class="hideimg" src="http://e.jikexueyuan.com/headerandfooter/images/app.png?t=1480585623000" title="隐藏的二维码" alt="">
+					</a>
+					<a href="#" class="phone android-download">
+						<span class="preybox"></span>
+						<p>Android</p>
+						<img class="hideimg" src="http://e.jikexueyuan.com/headerandfooter/images/app.png?t=1480585623000" alt="">
+					</a>
+				</div>
+			</div>
+			<hr>
+			<div class="copyright">						<!-- 版权声明 -->
+				<span>
+					Copyright © 2013-2016&nbsp;
+				</span>
+				<strong>
+					<a href="#">jikexueyuan.com</a>
+				</strong>
+				<span> 
+					All Rights Reserved. 京ICP备11018032号-8 京公网安备11010802020210
+				</span>
+				<a href="#">
+					<img src="http://e.jikexueyuan.com/headerandfooter/images/icon-down-wechat.png" alt="">
+				</a>
+				<a href="#">
+					<img src="http://e.jikexueyuan.com/headerandfooter/images/icon-down-sina.png" alt="">
+				</a>	
+			</div>
+			<img src="http://icon.szfw.org/cert.png?t=1480585623000" width="60px" class="finalimg" alt="">
+			
+		</div>
+	</footer>
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="j1.js"></script>
+	<script src="bootstrap.min.js"></script>
+</body>
+</html>
