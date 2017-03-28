@@ -1,0 +1,99 @@
+h1{
+	text-align: center;
+}
+.cube{
+	position: absolute;
+	left: 50%;
+	top:300px;
+	margin-left:-150px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-perspective: 1500;
+	-moz-perspective: 1500;
+	-ms-perspective: 1500;
+	perspective: 1500;
+	-webkit-perspective-origin: 25% -87%;
+	-moz-perspective-origin: 25% -87%;
+	-ms-perspective-origin: 25% -87%;
+	perspective-origin: 0% 0%; 
+	
+}
+.animation{												/*动画*/
+	animation-name:animation;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	transform-style: preserve-3d;
+	transform-origin: 300px 300px 300px;
+
+}
+@-webkit-keyframes animation  								/*动作从初始到结束*/
+       {  
+           from  
+           {  
+           	transform-origin:300px 300px 300px;
+            transform: rotateX(0) rotateY(0deg) rotateZ(0deg);  
+           }  
+  
+           to  
+           { 
+           	 transform-origin: 300px 300px 300px;
+             transform:rotateX(180deg) rotateY(180deg) rotateZ(180deg);  
+           }  
+       }  
+
+.a1,.b2,.c3,.d4,.e5,.f6{
+	width: 300px;
+	height: 300px;
+}
+.a,.b,.c,.d,.e,.f{
+	width: 100px;
+	height: 100px;
+	border-radius: 10px;
+	float: left;
+	 
+}
+.a{																/*设置颜色*/
+	background: #ff0000;
+}
+.b{
+	background: #ffff00;
+}
+.c{
+	background: #00ff00;
+}
+.d{
+	background: #00ffff;
+}
+.e{
+	background: #0000ff;
+}
+.f{
+	background: #ff00ff;
+}
+.a1{																/*设置各面的位置*/
+	position: absolute;
+	transform: translateZ(150px);
+}
+.b2{
+	position: absolute;
+	transform:rotateY(90deg) translateZ(-150px) ;
+}
+.c3{
+	position: absolute;
+	transform:rotateY(90deg) translateZ(150px) ;
+}
+.d4{
+	position: absolute;
+	transform:translateZ(-150px) ;
+}
+.e5{
+	position: absolute;
+	transform:translateY(-150px) rotateX(90deg) ;
+}
+.f6{
+	
+	transform: translateY(150px) rotateX(90deg) ;
+}

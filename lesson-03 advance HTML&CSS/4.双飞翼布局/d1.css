@@ -1,0 +1,54 @@
+*{margin: 0;padding: 0}
+body{
+	color: white;
+}
+header{
+	height: 200px;
+	background: #666;
+}
+footer{
+	height: 200px;
+	background: #777;
+}
+main{
+	height: 400px;
+	background: #888;
+	overflow: hidden;	
+}
+.m1{						/*中间的内容*/
+	margin-left:100px;
+	margin-right: 150px;
+	background: #455aed;
+	padding-bottom: 888px;
+	margin-bottom: -888px;
+	
+}
+.middle{						/*中间*/
+	
+	width: 100%;
+	background: #123456;
+	float: left;
+		
+}
+.left{							/*左边*/
+	
+	width: 100px;
+	background: #647543;
+	float: left;
+	margin-left:-100%;
+	margin-bottom: -8888px;
+	padding-bottom: 8888px;
+	
+
+}
+.right{							/*右边*/
+	
+	width: 150px;
+	background: #aa3445; 
+	float: right;
+	margin-left:-150px;
+	margin-bottom: -8888px;
+	padding-bottom: 8888px;
+	
+	
+}
