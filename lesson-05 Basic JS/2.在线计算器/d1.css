@@ -1,0 +1,14 @@
+.box{						/*计算器盒子*/
+	height: 280px;
+	border: 1px #aaa solid;
+	border-radius: 10px;
+	background: #555;
+}
+#inputBox{						/*输入框*/
+	border: 1px #aaa solid;
+	border-radius: 5px;
+	margin-top: 15px;
+	font-size: 30px;
+	line-height: 60px;
+	
+}

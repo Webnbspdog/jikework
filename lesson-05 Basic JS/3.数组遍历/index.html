@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数组遍历</title>
+</head>
+<body>
+	<p>找到数组[“a“，”x“，”b“，”d“，”m“，”a“，”k，“m”，“p”，“j”，“a”]出现最多的字母并给出个数和每一个所在的顺序。</p>
+	<script>
+	var arr=["a","x","b","d","m","a","k","m","p","j","a"];
+	var obj={};
+
+	for(var i=0;i<arr.length;i++)
+	{
+		if(obj[arr[i]])				//判断字母是否统计过了，统计过了的话；数量+1，并且录入位置；
+		{
+			obj[arr[i]].count+=1;
+			obj[arr[i]].position.push(i);
+		}
+		else				//没统计过的h话，数量设为1，统计位置；
+		{
+			obj[arr[i]]={'count':1,'position':[i]};
+		}
+			
+	}
+	var max=0;					//最多字母个数
+	var lat;					//最多的字母
+	var rearr;					//最多字母的位置
+	for(attr in obj)
+		{
+			if(obj[attr].count>max)
+			{
+				max=obj[attr].count;
+				lat=attr;
+				rearr=obj[attr].position;
+			}
+        }
+ 	document.write("最多的字母是："+lat+";个数是："+max+";顺序是："+rearr);
+
+	</script>
+</body>
+</html>

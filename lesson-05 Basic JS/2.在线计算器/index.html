@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>计算器</title>
+	<link rel="stylesheet" href="d1.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="col-lg-4 box">
+			<input type="text" id="inputBox" class="col-lg-12 col-md-12 col-xs-12">				<!-- 输入框 -->
+			<div>															<!-- 按钮区域 -->	
+				<button class="col-lg-3 col-md-3 col-xs-3 btn btn-danger" id="clear"
+				onclick="window.location.reload()">清屏</button>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-warning" id="sin" onclick="getMathSymbol(this.id)">sin</button>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-warning" id="cos" onclick="getMathSymbol(this.id)">cos</button>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-warning" id="yu" onclick="getSymbol(this.id)">取余</button>
+			</div>
+			<div>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-info" id="num7" onclick="getNum(this.id)">7</button>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-info" id="num8" onclick="getNum(this.id)">8</button>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-info" id="num9" onclick="getNum(this.id)">9</button>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-warning" id="plus" onclick="getSymbol(this.id)">+</button>
+			</div>
+			<div>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-info" id="num4" onclick="getNum(this.id)">4</button>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-info" id="num5" onclick="getNum(this.id)">5</button>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-info" id="num6" onclick="getNum(this.id)">6</button>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-warning" id="sub" onclick="getSymbol(this.id)">-</button>
+			</div>
+			<div>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-info" id="num1" onclick="getNum(this.id)">1</button>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-info" id="num2" onclick="getNum(this.id)">2</button>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-info" id="num3" onclick="getNum(this.id)">3</button>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-warning" id="take" onclick="getSymbol(this.id)">*</button>
+			</div>
+			<div>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-info" id="num0" onclick="getNum(this.id)">0</button>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-info" id="num." onclick="getNum(this.id)">.</button>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-success" id="equal" onclick="result()">=</button>
+				<button class="col-lg-3 col-md-3 col-xs-3  btn btn-warning" id="division" onclick="getSymbol(this.id)">/</button>
+			</div>
+		</div>
+	</div>
+	<script src="j1.js"></script>
+</body>
+</html>
