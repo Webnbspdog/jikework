@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hao123换肤</title>
+	<link rel="stylesheet" href="d1.css">
+	<link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="col-lg-8 navigation-left">
+				<ul>
+					<li class="haologo" id="haologo" onclick="appear(this.id)">
+						<img src="https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/img/richanglogo168_24.png" alt="">
+						<span class="setHomePage" id="setHomePage">设为首页</span>
+					</li>
+					<span id="hideHomePage">
+						<a href="#">下载hao123浏览器</a>
+					</span>
+					<li>
+						<a href="#">
+							<span class="city" id="spanCity">青岛</span>
+							<span class="glyphicon glyphicon-chevron-down" id="rotatingArrow" onclick="appear(this.id);rotate(this.id)"></span>
+							<span id="hideAddress">
+								<form action="">
+									<select name="省份" id="province" onchange="chg(this)">
+										<option value="-1">请选择</option>
+									</select>
+									<select name="城市" id="city"  onchange="chg2(this)" >
+										<option value="-1">请选择</option>
+									</select>
+									<select name="地区" id="area">
+										<option value="-1">请选择</option>
+									</select>
+									<br>
+									<input type="submit" value="确定" onclick="submitCity()">
+									<input type="reset" value="取消">
+								</form>
+							</span>
+							<img src="https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/res/weather/v1/a0.png" alt="">
+							<span class=" temperature">12 ~ 4℃</span>
+						</a>
+						<a href="#">
+							<span class="glyphicon glyphicon-circle-arrow-right"></span>
+						</a>
+					</li>
+					<li id="aDate" onclick="appear(this.id)">
+						<a href="#" >
+							<span class="date">12月19日</span>
+							<span class="week">周一</span>
+							<span class="lunar">十一月廿一</span>
+							<span>春节抢票</span>
+						</a>
+						
+					</li>
+					<span id="hideCalendar">
+						万年历
+					</span>
+					<a href="#" id="starSign" onclick="appear(this.id)">星座运势</a>
+					<span id="hideFortune">
+						星座运势
+					</span>
+					<div class="clear"></div>
+				</ul>
+			</div>
+			<div class="col-lg-4 navigation-right">
+				<a href="#">
+					<span class="glyphicons glyphicons-user"></span>
+					登录
+				</a>
+				<a href="#">网盘</a>
+				<a href="#">邮箱</a>
+				<a href="#">浏览器</a>
+				<a href="#">换肤</a>
+				<a href="#">
+					<span class="smile">这种房子越住越富</span>
+				</a>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="search">
+			<span class="col-lg-8 col-lg-offset-1">
+				<a href="#"><span class="baiduLogo"></span></a>
+				<input type="text" id="searchBox">
+			</span>
+			<button class="baidu-btn"><span class="baiduPosition">百度一下</span></button>
+			<span class="baiduNav">
+				<span>网页</span>
+				<span class="glyphicon glyphicon-chevron-down" id="arrow" onclick="rotate(this.id);appear(this.id)"></span>
+				<span id="hideNav">
+					<a href="#">网页</a>
+					<a href="#">音乐</a>
+					<a href="#">视频</a>
+					<a href="#">图片</a>
+					<a href="#">贴吧</a>
+					<a href="#">知道</a>
+					<a href="#">新闻</a>
+					<a href="#">地图</a>
+					<a href="#">更多>></a>
+				</span>
+				<span class="changeSkin">
+					<span>换肤：</span>
+					<span class="skin skin1" onclick="changeOrange()"></span>
+					<span class="skin skin2" onclick="changeBlue()"></span>
+					<span class="skin skin3" onclick="changeRed()"></span>
+					<span class="skin skin4" onclick="changeGreen()"></span>
+				</span>
+			</span>
+			</div>
+			<div class="nav1" id="nav1">		<!-- 导航栏第一行 -->
+				<a href="#" class="firstPage" id="firstPage">首页</a>
+				<a href="#" class="nav1Othera">电视剧</a>
+				<a href="#" class="nav1Othera">最新电影</a>
+				<a href="#" class="nav1Othera">新闻头条</a>
+				<a href="#" class="nav1Othera">八卦娱乐</a>
+				<a href="#" class="nav1Othera">军事热点</a>
+				<a href="#" class="nav1Othera">热门游戏</a>
+				<a href="#" class="nav1Othera">小游戏</a>
+				<a href="#" class="nav1Othera">今日特价</a>
+				<a href="#" class="nav1Othera">特价旅游</a>
+				<a href="#" class="nav1Othera">青岛生活</a>
+			</div>
+			<div class="nav2" id="nav2">
+				<a href="#" class="website">权威推荐</a>
+				<a href="#" class="website">人民网</a>
+				<a href="#" class="website">新华网</a>
+				<a href="#" class="website">央视网</a>
+				<a href="#" class="website">国际在线</a>
+				<a href="#" class="website">中国日报网</a>
+				<a href="#" class="website">中国网</a>
+				<a href="#" class="website">中国经济网</a>
+				<a href="#" class="website">光明网</a>
+				<a href="#" class="website">央广网</a>
+				<a href="#" class="website">求是网</a>
+				<a href="#" class="website">中国青年网</a>
+				<a href="#" class="website">中国国信网</a>
+			</div>
+			<div>
+			<span class="col-lg-3 aside">		<!-- 侧栏 -->
+				<div class="aside-mode1">
+					<span class="left">
+						<div>
+							<i class="icon-tv"></i>
+							<a href="#">电视剧</a>|<a href="#">综艺</a>
+						</div>
+						<div>
+							<i class="icon-movie"></i>
+							<a href="#">电影</a>|<a href="#">直播</a>
+						</div>
+						<div>
+							<i class="icon-news"></i>
+							<a href="#">新闻</a>|<a href="#">军事</a>
+						</div>
+						<div>
+							<i class="icon-lottery"></i>
+							<a href="#">彩票</a>|<a href="#">竞猜</a>
+						</div>
+						<div>
+							<i class="icon-phone"></i>
+							<a href="#">特价</a>|<a href="#">手机</a>
+						</div>
+					</span>
+					<span class="right">
+						<div>
+							<i class="icon-game"></i>
+							<a href="#">游戏</a>|<a href="#">小游戏</a>
+						</div>
+						<div>
+							<i class="icon-cartoon"></i>
+							<a href="#">动画</a>|<a href="#">漫画</a>
+						</div>
+						<div>
+							<i class="icon-tourism"></i>
+							<a href="#">旅游</a>|<a href="#">音乐</a>
+						</div>
+						<div>
+							<i class="icon-novel"></i>
+							<a href="#">搞笑</a>|<a href="#">小说</a>
+						</div>
+						<div>
+							<i class="icon-share"></i>
+							<a href="#">股票</a>|<a href="#">理财</a>
+						</div>
+					</span>
+				</div>
+			</span>
+			<span class=" col-lg-9 section">	<!-- 主栏 -->
+				<span class="col-lg-2">
+					<a href="#">百度.贴吧</a>
+					<a href="#">百度.贴吧</a>
+					<a href="#">百度.贴吧</a>
+					<a href="#">百度.贴吧</a>
+					<a href="#">百度.贴吧</a>
+					<a href="#">百度.贴吧</a>
+				</span>
+				<span class="col-lg-2">
+					<a href="#">新浪.微博</a>
+					<a href="#">新浪.微博</a>
+					<a href="#">新浪.微博</a>
+					<a href="#" class="colorText">新浪.微博</a>
+					<a href="#">新浪.微博</a>
+					<a href="#">新浪.微博</a>
+				</span>
+				<span class="col-lg-2">
+					<a href="#">搜狐.热点</a>
+					<a href="#" class="colorText">搜狐.热点</a>
+					<a href="#">搜狐.热点</a>
+					<a href="#">搜狐.热点</a>
+					<a href="#">搜狐.热点</a>
+					<a href="#">搜狐.热点</a>
+				</span>
+				<span class="col-lg-2">
+					<a href="#" class="colorText">腾讯</a>
+					<a href="#">腾讯</a>
+					<a href="#">腾讯</a>
+					<a href="#">腾讯</a>
+					<a href="#">腾讯</a>
+					<a href="#">腾讯</a>
+				</span>
+				<span class="col-lg-2">
+					<a href="#">网易</a>
+					<a href="#">网易</a>
+					<a href="#">网易</a>
+					<a href="#">网易</a>
+					<a href="#">网易</a>
+					<a href="#" class="colorText">网易</a>
+				</span>
+				<span class="col-lg-2">
+					<a href="#">优酷网</a>
+					<a href="#">优酷网</a>
+					<a href="#">优酷网</a>
+					<a href="#" class="colorText">优酷网</a>
+					<a href="#">优酷网</a>
+					<a href="#">优酷网</a>
+				</span>
+
+			</span>
+		</div>
+		</div>
+		
+	</main>
+	<script src="j1.js">
+	</script>
+</body>
+</html>
